@@ -24,6 +24,7 @@ phases:
       - echo Pushing the Docker images...
       - docker push $REPOSITORY_URI:$IMAGE_TAG
       - echo Writing image definitions file...
-      - printf '[{"name":"ecs-codedeploy-container","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > file.json
+      - printf '{"ImageURI":"%s"}' $REPOSITORY_URI:$IMAGE_TAG  > imageDetail.json
 artifacts:
-    files: file.json
+    - imageDetail.json
+    - appspec.yaml
