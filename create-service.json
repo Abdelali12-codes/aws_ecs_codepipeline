@@ -3,15 +3,9 @@
     "cluster": "ecs-fargate",
     "loadBalancers": [
         {
-            "targetGroupArn": "arn:aws:elasticloadbalancing:eu-west-3:080266302756:targetgroup/ecs-codepipeline-target1/b01c4144a271b0c8",
+            "targetGroupArn": "arn:aws:elasticloadbalancing:eu-west-3:080266302756:targetgroup/ecs-codepipeline-target1/d8b2b9241022d29f",
             "containerName": "ecs-codepipeline-container",
             "containerPort": 80
-        },
-        {
-            "targetGroupArn": "arn:aws:elasticloadbalancing:eu-west-3:080266302756:targetgroup/ecs-codedeploy-service-2/75027452ac6541d7",
-            "containerName": "ecs-codepipeline-container",
-            "containerPort": 80
-    
         }
     ],
     "desiredCount": 1,
