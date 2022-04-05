@@ -10,7 +10,7 @@ aws ecs register-task-definition --cli-input-json file://taskdef.json
 
 ```
 aws ecs create-service --service-name my-service --cli-input-json file://create-service.json
-``
+```
 
 * describe a service on the ecs cluster
 
