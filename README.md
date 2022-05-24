@@ -35,3 +35,5 @@ output it during the build stage in the buildspec.yml file, make sure to add thi
 ```
 printf '{"ImageURI":"%s"}' $REPOSITORY_URI:$IMAGE_TAG  > imageDetail.json
 ```
+* codebuild url
+https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html
